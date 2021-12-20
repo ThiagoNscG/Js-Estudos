@@ -41,7 +41,7 @@
         }
         #resultado{
             background-color: white;
-            width: ;
+            width: 207px;
             height: 30px;
             margin: 5px;
             font-size: 25px;
@@ -56,7 +56,7 @@
         <h1> Thiago Brabira</h1>
         <div class="calculadora">
             <h1>Calculadora</h1>
-            <p id='resultado'></p>
+            <p id='resultado' style="overflow: hidden; width:207px; border:1px; white-space:nowrap;" ondblclick="alert()"> </p>
             <table>
                 <tr>
                     <td><button class="botao" onclick="clean()">C</button></td>
@@ -84,7 +84,7 @@
                 </tr>
                 <tr>
                     <td colspan="2"><button class="botao" onclick="insert('0')" style="width: 106px;">0</button></td>
-                    <td><button class="botao"onclick="insert('.')">.</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
                 </tr>
             </table>
         </div>
@@ -108,6 +108,9 @@
             } else {
                 document.getElementById('resultado').innerHTML = "Nada..."
             }
+        }
+        function alert() {
+            
         }
     </script>
 </body>
